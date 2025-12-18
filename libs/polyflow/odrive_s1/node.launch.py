@@ -8,7 +8,7 @@ def generate_launch_description():
     inbound_connections = json.loads('[]')
     outbound_connections = json.loads('[]')
     env = {
-        "POLYFLOW_NODE_ID": "69438531ee23d1e34ffba637",
+        "POLYFLOW_NODE_ID": "69438b74ee23d1e34ffba704",
         "POLYFLOW_PARAMETERS": json.dumps(parameters),
         "POLYFLOW_CONFIGURATION": json.dumps(configuration),
         "POLYFLOW_INBOUND_CONNECTIONS": json.dumps(inbound_connections),
