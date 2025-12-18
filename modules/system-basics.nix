@@ -35,6 +35,8 @@
     nftables.enable = true;
     firewall = {
       allowedTCPPorts = [ 80 ];
+      # Allow ROS 2 DDS multicast discovery and data ports
+      allowedUDPPortRanges = [ { from = 7400; to = 7500; } ];
       # Allow DHCP/DNS on the hotspot interface so clients can get leases.
       interfaces."wlan0" = {
         allowedUDPPorts = [ 53 67 68 ];
